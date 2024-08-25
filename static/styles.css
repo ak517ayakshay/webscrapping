@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin: 40px 0;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, #007bff, #00bcd4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1:hover {
+    color: #ffffff;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+}
+
+.row-custom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col-custom {
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    align-items: stretch;
+}
+
+.btn-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .btn-custom {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .col-custom {
+        flex: 1 1 100%;
+    }
+}
